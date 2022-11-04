@@ -20,7 +20,7 @@ class PickupPoint
 
     public function setType(int $type): self
     {
-        if (!in_array($type, [self::TYPE_TERMINAL, self::TYPE_POST_OFFICE])) {
+        if (! in_array($type, [self::TYPE_TERMINAL, self::TYPE_POST_OFFICE])) {
             throw new \InvalidArgumentException('Unsupported type');
         }
 

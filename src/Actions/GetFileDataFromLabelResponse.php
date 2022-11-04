@@ -19,8 +19,8 @@ class GetFileDataFromLabelResponse
         $xmlArray = json_decode(json_encode((array) $xmlObj), true);
         $barcode = $xmlArray['Body']['addrcardMsgResponse']['successAddressCards']['addressCardData']['fileData'] ?? null;
 
-        if (!$barcode) {
-            throw new LabelFileDataException("Can't get fileData. Response xml: " . $responseXmlString, 1);
+        if (! $barcode) {
+            throw new LabelFileDataException("Can't get fileData. Response xml: ".$responseXmlString, 1);
         }
 
         return $barcode;

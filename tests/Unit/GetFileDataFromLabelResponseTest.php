@@ -10,7 +10,7 @@ class GetFileDataFromLabelResponseTest extends TestCase
     /** @test */
     public function canGetFileData()
     {
-        $file = __DIR__ . '/../files/getLabelResponse.xml';
+        $file = __DIR__.'/../files/getLabelResponse.xml';
 
         $shipmentResponse = file_get_contents($file);
 

@@ -10,7 +10,7 @@ class GetBarcodeFromShipmentResponseTest extends TestCase
     /** @test */
     public function canGetBarcode()
     {
-        $file = __DIR__ . '/../files/shipmentResponse.xml';
+        $file = __DIR__.'/../files/shipmentResponse.xml';
 
         $shipmentResponse = file_get_contents($file);
 

@@ -19,8 +19,8 @@ class GetBarcodeFromShipmentResponse
         $xmlArray = json_decode(json_encode((array) $xmlObj), true);
         $barcode = $xmlArray['Body']['businessToClientMsgResponse']['savedPacketInfo']['barcodeInfo']['barcode'] ?? null;
 
-        if (!$barcode) {
-            throw new ShipmentBarcodeException("Can't get barcode. Response xml: " . $responseXmlString, 1);
+        if (! $barcode) {
+            throw new ShipmentBarcodeException("Can't get barcode. Response xml: ".$responseXmlString, 1);
         }
 
         return $barcode;

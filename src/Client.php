@@ -65,7 +65,7 @@ class Client
 
     public function getLabel(string $parcelBarcode): string
     {
-        $file = __DIR__ . '/../tests/files/getLabelResponse.xml';
+        $file = __DIR__.'/../tests/files/getLabelResponse.xml';
 
         $shipmentResponse = file_get_contents($file);
 
@@ -134,8 +134,8 @@ class Client
     {
         $request = $this->soapClient->__getLastRequest() ?? '-';
 
-        return  'Soap error: ' . $th->faultstring . ".\n"
-            . 'Faultcode: ' . $th->faultcode . ".\n"
-            . 'Request: ' . $request;
+        return  'Soap error: '.$th->faultstring.".\n"
+            .'Faultcode: '.$th->faultcode.".\n"
+            .'Request: '.$request;
     }
 }

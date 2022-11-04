@@ -13,7 +13,7 @@ class CreateLabelXMLTest extends TestCase
         $xml = (new CreateLabelXML)->handle('12345', 'CE376918992EE', 'example@pintek.ee');
 
         $this->assertXmlStringEqualsXmlFile(
-            __DIR__ . '/../files/sendLabelRequestBody.xml',
+            __DIR__.'/../files/sendLabelRequestBody.xml',
             $xml
         );
     }
@@ -24,7 +24,7 @@ class CreateLabelXMLTest extends TestCase
         $xml = (new CreateLabelXML)->handle('12345', 'CE376918992EE');
 
         $this->assertXmlStringEqualsXmlFile(
-            __DIR__ . '/../files/getLabelRequestBody.xml',
+            __DIR__.'/../files/getLabelRequestBody.xml',
             $xml
         );
     }

@@ -13,7 +13,7 @@ class CreateShipmentXMLTest extends TestCase
         $xml = (new CreateShipmentXML)->handle('12345', $this->parcel());
 
         $this->assertXmlStringEqualsXmlFile(
-            __DIR__ . '/../files/shipmentRequestBody.xml',
+            __DIR__.'/../files/shipmentRequestBody.xml',
             $xml
         );
     }
