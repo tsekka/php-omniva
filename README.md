@@ -1,8 +1,8 @@
 # Omniva for PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tsekka/omniva.svg?style=flat-square)](https://packagist.org/packages/tsekka/omniva)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tsekka/omniva/run-tests?label=tests)](https://github.com/tsekka/omniva/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/tsekka/omniva/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/tsekka/omniva/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tsekka/omniva/run-tests?label=tests)](https://github.com/tsekka/php-omniva/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/tsekka/omniva/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/tsekka/php-omniva/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/tsekka/omniva.svg?style=flat-square)](https://packagist.org/packages/tsekka/omniva)
 
 Omniva is a shipping carrier serving Baltic countries Estonia, Latvia and Lithuania. With this package, you'll be able to generate parcels and request shipping labels.
