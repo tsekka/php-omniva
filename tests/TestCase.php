@@ -2,12 +2,11 @@
 
 namespace Tsekka\Omniva\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Tsekka\Omniva\Address;
 use Tsekka\Omniva\Parcel;
 use Tsekka\Omniva\PickupPoint;
 
-class TestCase extends Orchestra
+class TestCase
 {
     protected function parcel(): Parcel
     {
