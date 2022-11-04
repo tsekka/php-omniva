@@ -49,17 +49,18 @@ composer require tsekka/omniva
         deliveryService: 'PA'
     );
     $pickupPoint = new PickupPoint(
-        offloadPostcode: 96094
+        offloadPostcode: 96094,
+        type: 0
     );
     $parcel
         ->addAdditionalService('ST')
         ->addAdditionalService('SF');
-    $receiver->pickupPoint = $pickupPoint;
 
     /**
      * Set & define receiver and returnee.
      */
     $receiver = new Address();
+    $receiver->pickupPoint = $pickupPoint;
     $receiver->name = 'Jane Doe';
     $receiver->mobile = '+3725511223';
     $receiver->email = 'client@example.com';
