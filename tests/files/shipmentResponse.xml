@@ -1,0 +1,16 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <businessToClientMsgResponse xmlns="http://service.core.epmx.application.eestipost.ee/xsd">
+            <partner xmlns="">12345</partner>
+            <provider xmlns="">EEPOST</provider>
+            <prompt xmlns="">Messages successfully received!</prompt>
+            <savedPacketInfo xmlns="">
+                <barcodeInfo>
+                    <clientItemId>ITEMNR1</clientItemId>
+                    <barcode>CE387408425EE</barcode>
+                </barcodeInfo>
+            </savedPacketInfo>
+        </businessToClientMsgResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

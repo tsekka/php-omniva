@@ -1,0 +1,51 @@
+{
+    "name": "tsekka/omniva",
+    "description": "Quick way to connect your php app with Omniva, a Baltic carrier serving Estonia, Latvia and Lithuania. Sends XML data via SOAP. Generates an Omniva order, outputs tracking number & orders package label via email to your email.",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "ext-soap": "*",
+        "ext-xmlwriter": "*",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tsekka\\Omniva\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tsekka\\Omniva\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristjan Käärma",
+            "email": "pintek@pintek.ee"
+        }
+    ],
+    "minimum-stability": "stable"
+}

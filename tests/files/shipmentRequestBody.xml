@@ -1,0 +1,26 @@
+<ns1:businessToClientMsgRequest>
+    <partner>12345</partner>
+    <interchange msg_type="elsinfov1">
+        <header file_id="6364cbc9e75c5" sender_cd="12345"/>
+        <item_list>
+            <item service="PA">
+                <add_service>
+                    <option code="ST"/>
+                    <option code="SF"/>
+                </add_service>
+                <receiverAddressee>
+                    <person_name>Jane Doe</person_name>
+                    <mobile>+3725511223</mobile>
+                    <email>client@example.com</email>
+                    <address country="EE" offloadPostcode="96094"/>
+                </receiverAddressee>
+                <returnAddressee>
+                    <person_name>John Row</person_name>
+                    <mobile>+3725566778</mobile>
+                    <email>returnee@example.com</email>
+                    <address country="EE" deliverypoint="PARNU" postcode="80040" street="Savi 20"/>
+                </returnAddressee>
+            </item>
+        </item_list>
+    </interchange>
+</ns1:businessToClientMsgRequest>
