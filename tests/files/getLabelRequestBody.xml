@@ -1,0 +1,7 @@
+<ns1:addrcardMsgRequest>
+    <partner>12345</partner>
+    <sendAddressCardTo>response</sendAddressCardTo>
+    <barcodes>
+        <barcode>CE376918992EE</barcode>
+    </barcodes>
+</ns1:addrcardMsgRequest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:addrcardMsgRequest>
+    <partner>12345</partner>
+    <sendAddressCardTo>email</sendAddressCardTo>
+    <cardReceiverEmail>example@pintek.ee</cardReceiverEmail>
+    <barcodes>
+        <barcode>CE376918992EE</barcode>
+    </barcodes>
+</ns1:addrcardMsgRequest>

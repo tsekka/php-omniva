@@ -1,0 +1,13 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <addrcardMsgResponse xmlns="http://service.core.epmx.application.eestipost.ee/xsd">
+            <partner xmlns="">12345</partner>
+            <successAddressCards xmlns="">
+                <addressCardData>
+                    <barcode>CE376918992EE</barcode>
+                </addressCardData>
+            </successAddressCards>
+        </addrcardMsgResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
