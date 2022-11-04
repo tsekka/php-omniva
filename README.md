@@ -18,7 +18,7 @@ Omniva is a shipping carrier serving Baltic countries Estonia, Latvia and Lithua
 You can install the package via composer:
 
 ```bash
-composer require tsekka/php-omniva
+composer require tsekka/omniva
 ```
 
 ## Usage examples
