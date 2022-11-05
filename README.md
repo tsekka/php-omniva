@@ -1,4 +1,4 @@
-# Omniva for PHP
+# Omniva for Laravel or other PHP applications
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tsekka/omniva.svg?style=flat-square)](https://packagist.org/packages/tsekka/omniva)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tsekka/php-omniva/run-tests?label=tests)](https://github.com/tsekka/php-omniva/actions?query=workflow%3Arun-tests+branch%3Amain)
