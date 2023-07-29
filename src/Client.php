@@ -115,7 +115,7 @@ class Client
         return (new CreateShipmentXML)->handle($this->username, $parcel);
     }
 
-    private function labelXML(string $parcelBarcode, string|null $email): string
+    private function labelXML(string $parcelBarcode, ?string $email): string
     {
         return (new CreateLabelXML)->handle($this->username, $parcelBarcode, $email);
     }
@@ -124,7 +124,7 @@ class Client
     {
         $request = $this->soapClient->__getLastRequest() ?? '-';
 
-        return  'Soap error: ' . $th->faultstring . ".\n"
+        return 'Soap error: ' . $th->faultstring . ".\n"
             . 'Faultcode: ' . $th->faultcode . ".\n"
             . 'Request: ' . $request;
     }

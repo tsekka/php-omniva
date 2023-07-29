@@ -9,7 +9,7 @@ class CreateLabelXML
     public function handle(
         string $username,
         string $barcode,
-        string|null $email = null
+        string $email = null
     ): string {
         $writer = new XMLWriter();
         $writer->openMemory();
