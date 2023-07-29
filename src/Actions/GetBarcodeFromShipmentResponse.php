@@ -13,7 +13,7 @@ class GetBarcodeFromShipmentResponse
     public function handle(string $responseXmlString): string
     {
         try {
-            return $this->updatedMethod($responseXmlString)
+            return $this->updatedMethod($responseXmlString);
         } catch (\Throwable $th) {
             //
         }
