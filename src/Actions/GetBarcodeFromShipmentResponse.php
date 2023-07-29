@@ -12,6 +12,12 @@ class GetBarcodeFromShipmentResponse
      */
     public function handle(string $responseXmlString): string
     {
+        try {
+            return $this->updatedMethod($responseXmlString)
+        } catch (\Throwable $th) {
+            //
+        }
+
         $xmlString = preg_replace('/xmlns[^=]*="[^"]*"/i', '', $responseXmlString);
         $xmlString = str_replace('SOAP-ENV:', '', $xmlString);
         $xmlString = str_replace('soapenv:', '', $xmlString);
@@ -24,5 +30,18 @@ class GetBarcodeFromShipmentResponse
         }
 
         return $barcode;
+    }
+
+    private function updatedMethod(string $responseXmlString): string
+    {
+        $xmlString = preg_replace('/<(\/)?(\w+):/i', '<$1', $responseXmlString);
+        $xmlString = preg_replace('/<\/(\w+):/i', '</', $xmlString);
+        $xmlObj = new SimpleXMLElement($xmlString);
+        $barcodeNodes = $xmlObj->xpath('//businessToClientMsgResponse/savedPacketInfo/barcodeInfo/barcode');
+        if ($barcodeNodes && count($barcodeNodes) > 0) {
+            return (string) $barcodeNodes[0];
+        } else {
+            throw new \Exception("Can't get barcode. Response xml: " . $responseXmlString, 1);
+        }
     }
 }
